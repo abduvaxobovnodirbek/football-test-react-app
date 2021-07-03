@@ -1,0 +1,208 @@
+.Home-wrapper{
+    position: relative;
+    top:0px;
+    background:url("https://wallpapercave.com/wp/wp4717587.jpg");
+    object-fit: cover;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Home-buttons{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Home-items{
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    padding:35px;
+    transform: translateX(-400px);
+    animation: homeItems 1s linear 0s 1 alternate forwards;
+}
+
+.Home-items>span{
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.Home-items>button{
+    font-weight: bold;
+}
+
+@keyframes homeItems {
+    0%{
+        transform: translateX(-400px);
+    }
+    
+    70%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+.Forms{
+    position: relative;
+    top: 50px;
+    z-index: 99;
+    height: 100%;
+    padding:20px 20px 39px;
+    transform: translateY(-100vh);
+    background-color: rgb(7, 7, 8);
+    transition: 0.5s ease;
+}
+
+
+
+.formImage{
+    height:500px;
+    object-fit: cover;
+}
+.form{
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    height:500px;
+}
+.form>input{
+    width: 50% !important;
+    position: relative;
+    top: 80px;
+    margin: auto;
+    background-color: black !important;
+    color: white !important;
+    text-align: center;
+    font-weight: bold !important;
+    border-radius: 0% !important;
+    border: none !important;
+    border-bottom: 1px solid rgb(163, 163, 163) !important;
+}
+.form>button{
+    position: relative;
+    top: 100px;
+    width: 50% !important;
+    margin: auto;
+    font-weight: bold !important;
+    padding: 5px !important;
+}
+.form>button:disabled{
+    cursor: not-allowed;
+}
+.myLink{
+    padding:5px 100px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.myLink:hover{
+    color: black;
+}
+.form>input::placeholder{
+    color: gray !important;
+    font-weight: bold;
+}
+.form>span{
+   font-weight: bold;
+   font-style: italic;
+   font-size: 25px;
+}
+
+.form-item>i{
+    font-size: 35px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width:992px) {
+    .form-item{
+        min-width: 100%;
+    }
+    .form>input{
+        width:80% !important;
+    }
+   
+    .form>button{
+        width:80% !important;
+    }
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .Forms{
+      padding: 0;
+    }
+    .form-item{
+        min-width: 100%;
+    }
+    .form>input{
+        width:50% !important;
+    }
+  
+    .form>button{
+        width:40% !important;
+    }
+    .formImage{
+        height: 300px;
+    }
+    .form-item>i{
+        right:20px;
+    }
+    .form{
+        height:255px;
+    }
+    .form>input{
+        top: 30px;
+    }
+    .form>button{
+        top: 40px;
+    }
+}
+
+
+
+
+
+@media (max-width:568px) {
+    .form>span{
+        font-size: 20px;
+    }
+    .form>input{
+        width:70% !important;
+    }
+    .myLink{
+        padding: 5px 120px;
+    }
+    .form>button{
+        width:300px !important;
+    }
+
+    
+   
+}
+
+@media (max-width:340px) {
+    .myLink{
+        padding: 5px 65px;
+    }
+    .form>button{
+        width:200px !important;
+    }
+}
